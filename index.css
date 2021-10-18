@@ -1,0 +1,351 @@
+@font-face {
+  font-family: "Quicksand-Light";
+  src: url(fonts/Quicksand-Light.ttf);
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: sans-serif;
+}
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #fff;
+  padding: 25px 0;
+  z-index: 999;
+}
+.navBar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navBar li {
+  margin: 0px 0 0 70px;
+  font-size: 13px;
+  color: #fff;
+  text-align: center;
+}
+.navBar li:hover {
+  color: #00b53a;
+}
+.background {
+  position: relative;
+  height: 150vh;
+  background-size: 100% 100%;
+}
+.background_image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.background_image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: zoom-in-zoom-out 20s linear infinite;
+}
+.logo {
+  width: 45px;
+  margin-right: 150px;
+}
+.button {
+  border: none;
+  background: none;
+  background-color: #091e2a;
+  padding: 17px 35px;
+  color: white;
+}
+.contant {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding-left: 100px;
+}
+.contant button {
+  align-self: flex-start;
+  border: none;
+  background: none;
+  background-color: #00b53a;
+  padding: 15px 40px;
+  color: white;
+  font-size: 18px;
+}
+.contant h3 {
+  font-size: 25px;
+  font-family: normal;
+  font-family: "Quicksand-Light";
+  margin-bottom: 10px;
+}
+.contant h1 {
+  font-size: 65px;
+  font-family: proxima-nova;
+}
+.contant h6 {
+  font-size: 15px;
+  margin: 25px 0 30px 0;
+  font-family: "Quicksand-Light";
+  line-height: 2.2em;
+}
+.boxOne {
+  position: relative;
+  width: 25%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5px 15px;
+  box-shadow: 0px 5px 15px 0px rgb(0, 0, 0, 10%);
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.4s ease-in-out;
+}
+
+.boxOne::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  background-color: #091e2a;
+  z-index: -1;
+  transition: all 0.4s ease-in-out;
+}
+.boxOne:hover::before {
+  top: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.boxOne h3 {
+  margin: 30px 0;
+  font-size: 25px;
+  transition: all 0.4s ease-in-out;
+}
+
+.boxOne p {
+  transition: all 0.4s ease-in-out;
+}
+
+.boxOne:hover h3,
+.boxOne:hover p {
+  color: #fff;
+  transition: all 0.4s ease-in-out;
+}
+
+.boxTwo {
+  position: relative;
+  width: 25%;
+  background-color: #fff;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 40px;
+  padding: 5px 15px;
+  z-index: 1;
+  overflow: hidden;
+  box-shadow: 0px 5px 15px 0px rgb(0, 0, 0, 10%);
+}
+.boxTwo::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  background-color: #091e2a;
+  z-index: -1;
+  transition: all 0.4s ease-in-out;
+}
+.boxTwo:hover::before {
+  top: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.boxTwo:hover h3,
+.boxTwo:hover p {
+  color: #fff;
+  transition: all 0.4s ease-in-out;
+}
+.boxTwo h3 {
+  margin: 30px 0;
+  font-size: 25px;
+}
+
+.boxThree {
+  width: 25%;
+  background-color: #00b53a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5px 15px;
+  color: #fff;
+  box-shadow: 0px 5px 15px 0px rgb(0, 0, 0, 10%);
+}
+.boxThree p {
+  margin: 30px 0;
+}
+.boxThree h3 {
+  font-size: 25px;
+}
+.boxThree button {
+  border: none;
+  background: none;
+  background-color: #fff;
+  padding: 17px 35px;
+  color: #00b53a;
+}
+
+.mainBox {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 125px;
+}
+.mainBox p {
+  font-size: 17px;
+  line-height: 30px;
+}
+.about {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.aboutImage {
+  position: relative;
+  width: 500px;
+}
+.aboutContent {
+  position: relative;
+  width: 500px;
+  height: 1000px;
+  margin-left: 50px;
+  padding: 50px;
+}
+.aboutImage img {
+  position: absolute;
+  width: 110%;
+  height: 95%;
+  object-fit: cover;
+}
+.aboutContent button {
+  border: none;
+  background: none;
+  background-color: #091e2a;
+  padding: 17px 35px;
+  color: white;
+  margin: 50px 0;
+}
+.aboutContent h5 {
+  color: #00b53a;
+}
+.aboutContent h1 {
+  font-size: 50px;
+  padding: 20px 0;
+  color: black;
+}
+.aboutContent p {
+  line-height: 30px;
+  color: #747474;
+}
+.aboutList {
+  color: #747474;
+  line-height: 30px;
+}
+.aboutList i {
+  margin-right: 10px;
+}
+
+/* *********************bulletes************************ */
+.bullets {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.bullets li {
+  padding: 10px 0;
+}
+.ourExp h4,
+.ourExp h1,
+.ourExp p {
+  text-align: center;
+}
+.ourExp h1,
+p {
+  padding: 20px 0;
+}
+.ourExp p {
+  color: #747474;
+}
+.ourExp h4 {
+  color: #00b53a;
+}
+.ourExp h1 {
+  font-size: 40px;
+}
+.bullets i {
+  color: #00b53a;
+  margin-right: 10px;
+}
+
+/* ********************* end bulletes************************ */
+
+/* *******************animation*************************** */
+/* **************** start footer *************************/
+
+.footer {
+  background-color: #091e2a;
+  display: flex;
+  box-sizing: border-box;
+}
+.footer img {
+  width: 100 px;
+  /* margin-right: 50px;  */
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.items ul {
+  color: white;
+  margin-top: 5px;
+  margin-left: 150px;
+}
+.items h3,
+h4 {
+  margin-top: 10px;
+  color: white;
+  text-align: center;
+  margin-left: 40px;
+}
+.footer p {
+  color: whitesmoke;
+  font-size: 15px;
+}
+.one{
+  margin-top: 20px;
+}
+
+/* **************** start footer *************************/
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
